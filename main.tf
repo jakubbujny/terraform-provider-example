@@ -1,13 +1,13 @@
 terraform {
   required_providers {
-    boilerplate = {
-      version = "~> 1.0.0"
-      source  = "terraform-example.com/exampleprovider/example"
+    example = {
+      source = "jakubbujny/example"
+      version = "7.0.0"
     }
   }
 }
 
-resource "boilerplate_person" "test" {
+resource "example_person" "test" {
   name = "asd"
   pid = 3
   age = 30
